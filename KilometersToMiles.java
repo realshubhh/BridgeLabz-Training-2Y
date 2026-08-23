@@ -1,1 +1,0 @@
-import java.util.*; public class KilometersToMiles{public static void main(String[]a){Scanner sc=new Scanner(System.in);System.out.print("Enter distance in kilometers: ");double k=sc.nextDouble();System.out.println("Miles = "+(k*0.621371));sc.close();}}
