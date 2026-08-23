@@ -1,0 +1,1 @@
+import java.util.*; public class PowerCalculation{public static void main(String[]a){Scanner sc=new Scanner(System.in);System.out.print("Enter base: ");double b=sc.nextDouble();System.out.print("Enter exponent: ");double e=sc.nextDouble();System.out.println("Result = "+Math.pow(b,e));sc.close();}}

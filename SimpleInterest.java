@@ -1,0 +1,1 @@
+import java.util.*; public class SimpleInterest{public static void main(String[]a){Scanner sc=new Scanner(System.in);System.out.print("Enter principal: ");double p=sc.nextDouble();System.out.print("Enter rate: ");double r=sc.nextDouble();System.out.print("Enter time: ");double t=sc.nextDouble();System.out.println("Simple Interest = "+(p*r*t/100));sc.close();}}
