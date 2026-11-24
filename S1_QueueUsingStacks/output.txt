@@ -1,0 +1,14 @@
+== Basic behaviour ==
+  peek    -> 1
+  dequeue -> 1
+  dequeue -> 2
+  dequeue -> 3
+  dequeue -> 4
+  isEmpty -> true
+  underflow handled: Queue underflow: dequeue on empty queue
+
+== Amortized cost: 100000 enqueues then 100000 dequeues ==
+  FIFO order kept: true, element transfers = 100000 (= n, so 1 move per element)
+
+== Randomised test against java.util.ArrayDeque used as a queue ==
+  200000 random operations match reference: PASS

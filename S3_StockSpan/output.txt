@@ -1,0 +1,31 @@
+  prices [100, 80, 60, 70, 60, 75, 85]
+  spans  [1, 1, 1, 2, 1, 4, 6]
+
+  prices [10, 4, 5, 90, 120, 80]
+  spans  [1, 1, 2, 4, 5, 1]
+
+  prices [10, 20, 30, 40]
+  spans  [1, 2, 3, 4]
+
+  prices [40, 30, 20, 10]
+  spans  [1, 1, 1, 1]
+
+  prices [5, 5, 5]
+  spans  [1, 2, 3]
+
+  prices [7]
+  spans  [1]
+
+  prices []
+  spans  []
+
+Day-by-day trace for [100, 80, 60, 70, 60, 75, 85]:
+  day 0 price 100 span 1   stack (bottom->top, indices) = [0]
+  day 1 price 80  span 1   stack (bottom->top, indices) = [0, 1]
+  day 2 price 60  span 1   stack (bottom->top, indices) = [0, 1, 2]
+  day 3 price 70  span 2   stack (bottom->top, indices) = [0, 1, 3]
+  day 4 price 60  span 1   stack (bottom->top, indices) = [0, 1, 3, 4]
+  day 5 price 75  span 4   stack (bottom->top, indices) = [0, 1, 5]
+  day 6 price 85  span 6   stack (bottom->top, indices) = [0, 6]
+
+  Randomised test (500 arrays) vs brute force: PASS

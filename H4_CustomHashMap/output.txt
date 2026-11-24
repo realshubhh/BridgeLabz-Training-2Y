@@ -1,0 +1,15 @@
+== Basic operations ==
+  get(banana) = 20, get(grape) = null
+  put(apple, 99) returns old value 10, now 99, size 3
+  remove(banana) = 20, remove(banana) again = null, size 2
+  null key supported: get(null) = 0, containsKey(null) = true
+
+== Collision demo: "Aa", "BB" and "C#" all have hashCode 2112 ==
+  bucket 0: [C#=third] -> [BB=second] -> [Aa=first]
+  get(Aa) = first, get(BB) = second, remove(Aa) -> first, get(BB) still = second
+
+== Resizing: insert 1000 integer keys into a map that starts with capacity 4 ==
+  size 1000, capacity 2048, resizes 9, longest chain 1
+
+== Randomised test: 200000 put/get/remove operations vs java.util.HashMap ==
+  PASS (final size 253)

@@ -1,0 +1,7 @@
+  petrol [4, 6, 7, 4] dist [6, 5, 3, 5] -> start at pump 1
+  petrol [6, 3, 7] dist [4, 6, 3] -> start at pump 2
+  petrol [1, 2, 3] dist [3, 3, 3] -> no tour possible
+  petrol [2, 2, 2] dist [2, 2, 2] -> start at pump 0
+  petrol [5] dist [4] -> start at pump 0
+  petrol [5] dist [6] -> no tour possible
+  Randomised test (2000 cases) vs brute force: PASS

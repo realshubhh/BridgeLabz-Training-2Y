@@ -1,0 +1,9 @@
+  array [1, 3, -1, -3, 5, 3, 6, 7], k = 3
+  max   [3, 3, 5, 5, 6, 7]
+  k = 1 : [1, 3, -1, -3, 5, 3, 6, 7]
+  k = 8 : [7]
+  all equal [4,4,4,4], k=2 : [4, 4, 4]
+  descending [9,8,7,6], k=2 : [9, 8, 7]
+  k = 0 rejected: window size must be positive
+  k = 20 rejected: window size larger than array
+  Randomised test (1000 cases) vs brute force: PASS

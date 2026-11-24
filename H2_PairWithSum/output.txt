@@ -1,0 +1,8 @@
+  [8, 7, 2, 5, 3, 1], target 10 -> pair (8, 2)
+  [5, 2, 6, 8, 1, 9], target 12 -> no pair
+  [3, 3], target 6 -> pair (3, 3)
+  [3], target 6 -> no pair
+  [], target 0 -> no pair
+  [-4, 4, 10], target 0 -> pair (-4, 4)
+  [2147483647, 1], target -2147483648 -> no pair
+  Randomised test (3000 cases) vs brute force: PASS
