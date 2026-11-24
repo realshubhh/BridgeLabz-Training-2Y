@@ -1,0 +1,21 @@
+== Basic typing, undo, redo (limit = 10) ==
+  Current text: "Hello linked list"
+  History (4/10): "" <-> "Hello" <-> "Hello linked" <-> ["Hello linked list"]
+  Current text: "Hello linked"
+  Current text: "Hello"
+  Current text: "Hello linked"
+
+== New action after undo discards the redo branch ==
+  Current text: "Hello linked world"
+  History (4/10): "" <-> "Hello" <-> "Hello linked" <-> ["Hello linked world"]
+  [!] Nothing to redo.
+
+== Undo all the way back ==
+  Current text: ""
+  [!] Nothing to undo.
+
+== History limit: type 12 words with limit 10 ==
+  History (10/10): "w1 w2 w3" <-> "w1 w2 w3 w4" <-> "w1 w2 w3 w4 w5" <-> "w1 w2 w3 w4 w5 w6" <-> "w1 w2 w3 w4 w5 w6 w7" <-> "w1 w2 w3 w4 w5 w6 w7 w8" <-> "w1 w2 w3 w4 w5 w6 w7 w8 w9" <-> "w1 w2 w3 w4 w5 w6 w7 w8 w9 w10" <-> "w1 w2 w3 w4 w5 w6 w7 w8 w9 w10 w11" <-> ["w1 w2 w3 w4 w5 w6 w7 w8 w9 w10 w11 w12"]
+  Could undo only 9 steps (oldest states were dropped)
+  Current text: "w1 w2 w3"
+  Current text: "w1 w2 w3 w4 w5 w6"

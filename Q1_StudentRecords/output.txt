@@ -1,0 +1,28 @@
+== Add at end / beginning / position ==
+  [!] Roll number 101 already exists.
+  [!] Invalid position 9 (valid: 1..7)
+  Roll: 99   | Name: Kabir      | Age: 20  | Grade: C
+  Roll: 100  | Name: Rohan      | Age: 19  | Grade: A+
+  Roll: 101  | Name: Aarav      | Age: 19  | Grade: A
+  Roll: 102  | Name: Meera      | Age: 21  | Grade: B
+  Roll: 103  | Name: Diya       | Age: 20  | Grade: B+
+  Roll: 104  | Name: Sana       | Age: 19  | Grade: A
+  Total students: 6
+
+== Search ==
+  Found: Roll: 102  | Name: Meera      | Age: 21  | Grade: B
+  Roll 555 not found
+
+== Update grade of roll 103 to A ==
+  Roll: 103  | Name: Diya       | Age: 20  | Grade: A
+
+== Delete head (99), middle (102), tail (104), missing (555) ==
+  [!] Roll 555 not found.
+  Roll: 100  | Name: Rohan      | Age: 19  | Grade: A+
+  Roll: 101  | Name: Aarav      | Age: 19  | Grade: A
+  Roll: 103  | Name: Diya       | Age: 20  | Grade: A
+  Total students: 3
+
+== Delete all, then delete on empty list ==
+  (no records)
+  [!] List is empty.

@@ -1,0 +1,30 @@
+  [!] Ticket ID 2 already exists.
+  [!] Seat A1 for "Inception" is already booked.
+== Booked tickets ==
+  Ticket 1   | Aarav    | Inception      | Seat A1   | 24-Nov-2026 10:15
+  Ticket 2   | Diya     | Interstellar   | Seat B4   | 24-Nov-2026 10:20
+  Ticket 3   | Aarav    | Dangal         | Seat C2   | 24-Nov-2026 11:05
+  Ticket 4   | Rohan    | Inception      | Seat A2   | 24-Nov-2026 11:30
+  (last ticket 4 links back to first ticket 1)
+Total booked: 4
+
+== Search by customer 'aarav' ==
+  Ticket 1   | Aarav    | Inception      | Seat A1   | 24-Nov-2026 10:15
+  Ticket 3   | Aarav    | Dangal         | Seat C2   | 24-Nov-2026 11:05
+== Search by movie 'Inception' ==
+  Ticket 1   | Aarav    | Inception      | Seat A1   | 24-Nov-2026 10:15
+  Ticket 4   | Rohan    | Inception      | Seat A2   | 24-Nov-2026 11:30
+== Search by movie 'Avatar' ==
+  No matching tickets.
+
+== Cancel first (1), last (4) and a missing ID (99) ==
+  [!] Ticket 99 not found.
+  Ticket 2   | Diya     | Interstellar   | Seat B4   | 24-Nov-2026 10:20
+  Ticket 3   | Aarav    | Dangal         | Seat C2   | 24-Nov-2026 11:05
+  (last ticket 3 links back to first ticket 2)
+Total booked: 2
+
+== Cancel the rest, then cancel on empty ==
+  (no tickets)
+  [!] No tickets booked.
+Total booked: 0

@@ -1,0 +1,46 @@
+  [!] Book ID 3 already exists.
+== Forward / reverse ==
+  --- Forward ---
+  ID: 3    | Wings of Fire              | A.P.J. Abdul Kalam | Biography  | Available
+  ID: 4    | Clean Architecture         | Robert C. Martin   | Tech       | Issued
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Available
+  ID: 5    | Eleven Minutes             | Paulo Coelho       | Fiction    | Available
+  --- Reverse ---
+  ID: 5    | Eleven Minutes             | Paulo Coelho       | Fiction    | Available
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Available
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+  ID: 4    | Clean Architecture         | Robert C. Martin   | Tech       | Issued
+  ID: 3    | Wings of Fire              | A.P.J. Abdul Kalam | Biography  | Available
+Total books: 5
+
+== Search title 'clean' ==
+  ID: 4    | Clean Architecture         | Robert C. Martin   | Tech       | Issued
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+== Search author 'paulo' ==
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Available
+  ID: 5    | Eleven Minutes             | Paulo Coelho       | Fiction    | Available
+== Search title 'zzz' ==
+  No matching books.
+
+== Update availability: ID 4 -> Available, ID 2 -> Issued ==
+  [!] Book ID 42 not found.
+  --- Forward ---
+  ID: 3    | Wings of Fire              | A.P.J. Abdul Kalam | Biography  | Available
+  ID: 4    | Clean Architecture         | Robert C. Martin   | Tech       | Available
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Issued
+  ID: 5    | Eleven Minutes             | Paulo Coelho       | Fiction    | Available
+
+== Remove head (3), tail (5), middle (4), missing (42) ==
+  [!] Book ID 42 not found.
+  --- Forward ---
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Issued
+  --- Reverse ---
+  ID: 2    | The Alchemist              | Paulo Coelho       | Fiction    | Issued
+  ID: 1    | Clean Code                 | Robert C. Martin   | Tech       | Available
+Total books: 2
+  --- Forward ---
+  (no books)
+Total books: 0

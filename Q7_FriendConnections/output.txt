@@ -1,0 +1,41 @@
+  [!] User ID 2 already exists.
+== Add friendships ==
+  [!] Aarav and Diya are already friends.
+  [!] A user cannot befriend themselves.
+  [!] Both users must exist (1, 99).
+  Friends of Aarav: Meera(4), Rohan(3), Diya(2)
+  Friends of Diya: Meera(4), Rohan(3), Aarav(1)
+  Friends of Rohan: Diya(2), Aarav(1)
+  Friends of Meera: Kabir(5), Diya(2), Aarav(1)
+  Friends of Kabir: Meera(4)
+
+== Mutual friends ==
+  Aarav & Diya  : Meera, Rohan
+  Rohan & Meera : Diya, Aarav
+  Aarav & Kabir : Meera
+
+== Search ==
+  By name 'meera': ID: 4   | Meera    | Age: 22
+  By ID 5        : ID: 5   | Kabir    | Age: 20
+  By ID 42       : null
+
+== Friend counts ==
+  Aarav -> 3 friend(s)
+  Diya -> 3 friend(s)
+  Rohan -> 2 friend(s)
+  Meera -> 3 friend(s)
+  Kabir -> 1 friend(s)
+
+== Remove Aarav-Diya and Meera-Kabir (and a non-friendship) ==
+  [!] Aarav and Kabir are not friends.
+  Friends of Aarav: Meera(4), Rohan(3)
+  Friends of Diya: Meera(4), Rohan(3)
+  Friends of Rohan: Diya(2), Aarav(1)
+  Friends of Meera: Diya(2), Aarav(1)
+  Friends of Kabir: (none)
+  Aarav & Diya mutual now: Meera, Rohan
+  Aarav -> 2 friend(s)
+  Diya -> 2 friend(s)
+  Rohan -> 2 friend(s)
+  Meera -> 2 friend(s)
+  Kabir -> 0 friend(s)

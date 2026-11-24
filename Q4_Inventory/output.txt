@@ -1,0 +1,53 @@
+  [!] Item ID 101 already exists.
+  [!] Quantity and price cannot be negative.
+== Inventory ==
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  ID: 101  | Keyboard     | Qty: 15   | Price:   1250.50 | Value:   18757.50
+  ID: 102  | Mouse        | Qty: 40   | Price:    499.00 | Value:   19960.00
+  ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00
+Total inventory value: 419726.50
+
+== Update quantity of ID 102 to 25 ==
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+
+== Search ==
+  By ID 104 : ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  By name 'laptop': [ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00]
+  By ID 999 : null
+
+== Sort by name ascending ==
+  ID: 101  | Keyboard     | Qty: 15   | Price:   1250.50 | Value:   18757.50
+  ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+
+== Sort by name descending ==
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00
+  ID: 101  | Keyboard     | Qty: 15   | Price:   1250.50 | Value:   18757.50
+
+== Sort by price ascending ==
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+  ID: 101  | Keyboard     | Qty: 15   | Price:   1250.50 | Value:   18757.50
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00
+
+== Sort by price descending ==
+  ID: 105  | Laptop       | Qty: 5    | Price:  55000.00 | Value:  275000.00
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  ID: 101  | Keyboard     | Qty: 15   | Price:   1250.50 | Value:   18757.50
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+
+== Remove (head, tail, missing) then add at end to test tail pointer after sort ==
+  [!] Item ID 777 not found.
+  ID: 103  | Monitor      | Qty: 8    | Price:   9800.00 | Value:   78400.00
+  ID: 104  | Webcam       | Qty: 12   | Price:   2300.75 | Value:   27609.00
+  ID: 102  | Mouse        | Qty: 25   | Price:    499.00 | Value:   12475.00
+  ID: 110  | Headset      | Qty: 20   | Price:    899.00 | Value:   17980.00
+Total inventory value: 136464.00

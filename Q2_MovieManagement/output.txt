@@ -1,0 +1,35 @@
+== Add movies ==
+  [!] Movie "inception" already exists.
+  [!] Rating must be between 0 and 10.
+  --- Forward (head -> tail) ---
+  Dangal                 | Nitesh Tiwari        | 2016 | 8.3
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
+  Inception              | Christopher Nolan    | 2010 | 8.8
+  Interstellar           | Christopher Nolan    | 2014 | 8.7
+  Dunkirk                | Christopher Nolan    | 2017 | 7.8
+  --- Reverse (tail -> head) ---
+  Dunkirk                | Christopher Nolan    | 2017 | 7.8
+  Interstellar           | Christopher Nolan    | 2014 | 8.7
+  Inception              | Christopher Nolan    | 2010 | 8.8
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
+  Dangal                 | Nitesh Tiwari        | 2016 | 8.3
+
+== Search by director: Christopher Nolan ==
+  Inception              | Christopher Nolan    | 2010 | 8.8
+  Interstellar           | Christopher Nolan    | 2014 | 8.7
+  Dunkirk                | Christopher Nolan    | 2017 | 7.8
+== Search by rating: 8.4 ==
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
+
+== Update rating of Dunkirk -> 8.4 ==
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
+  Dunkirk                | Christopher Nolan    | 2017 | 8.4
+
+== Remove head (Dangal), tail (Dunkirk), middle (Inception), missing ==
+  [!] "Avatar" not found.
+  --- Forward (head -> tail) ---
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
+  Interstellar           | Christopher Nolan    | 2014 | 8.7
+  --- Reverse (tail -> head) ---
+  Interstellar           | Christopher Nolan    | 2014 | 8.7
+  3 Idiots               | Rajkumar Hirani      | 2009 | 8.4
